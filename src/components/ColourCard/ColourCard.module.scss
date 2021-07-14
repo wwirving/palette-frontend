@@ -1,0 +1,19 @@
+@import "../../assets/styles/base.scss";
+
+.card {
+  font-family: $primary-font;
+  width: 100vw;
+  height: 100vw;
+  background-color: #76a955;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  & .hex {
+    font-size: 10vw;
+    padding-bottom: 10%;
+  }
+  & .add {
+    font-size: 7vw;
+  }
+}
