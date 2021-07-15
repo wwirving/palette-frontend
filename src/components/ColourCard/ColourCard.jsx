@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ColourCard.module.scss";
 import MenuModal from "../MenuModal";
 import { UserContext } from "../../context/UserProvider/UserProvider";
@@ -20,7 +20,7 @@ const ColourCard = (props) => {
           </p>
         </div>
       </div>
-      <MenuModal modal={modal} click={toggleModal} />
+      <MenuModal modal={modal} click={toggleModal} update={props.update} />
     </>
   );
 };

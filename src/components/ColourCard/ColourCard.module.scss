@@ -4,7 +4,9 @@
   font-family: $primary-font;
   width: 100vw;
   height: 100vw;
-  background-color: #76a955;
+  background-color: transparent;
+  z-index: 10;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
