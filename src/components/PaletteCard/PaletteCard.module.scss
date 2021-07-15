@@ -1,0 +1,17 @@
+@import "../../assets/styles/base.scss";
+
+.card {
+  font-family: $primary-font;
+  width: 100vw;
+  height: 100vw;
+  background-color: $secondary-color-gray;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  & .title {
+    font-size: 10vw;
+    padding-bottom: 10%;
+  }
+}

@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./PaletteCard.module.scss";
 
-const PaletteCard = () => {
+const PaletteCard = (props) => {
   return (
     <>
-      <p>PaletteCard works</p>
+      <div className={styles.card}>
+        <div className={styles.fontBox}>
+          <p className={styles.title}>SOFT CIRCUITS</p>
+        </div>
+      </div>
     </>
   );
 };
