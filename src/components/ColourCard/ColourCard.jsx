@@ -3,7 +3,7 @@ import styles from "./ColourCard.module.scss";
 import MenuModal from "../MenuModal";
 import { UserContext } from "../../context/UserProvider/UserProvider";
 
-const ColourCard = () => {
+const ColourCard = (props) => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -14,7 +14,7 @@ const ColourCard = () => {
     <>
       <div className={styles.card}>
         <div className={styles.fontBox}>
-          <p className={styles.hex}>76a955</p>
+          <p className={styles.hex}>{props.hex}</p>
           <p className={styles.add} onClick={toggleModal}>
             ADD TO PALETTE
           </p>

@@ -26,7 +26,19 @@ const AddModal = (props) => {
               className={styles.signUp}
               onClick={(e) => {
                 e.preventDefault();
-                console.log(document.getElementById("MERGE0").value);
+                if (props.type === "colour") {
+                  let newColour = {};
+                  newColour.colourId =
+                    "id" + Math.random().toString(16).slice(2);
+                  newColour.hexcode = document.getElementById("MERGE0").value;
+                  props.submit(newColour);
+                } else if (props.type === "palette") {
+                  let newColour = {};
+                  newColour.colourId =
+                    "id" + Math.random().toString(16).slice(2);
+                  newColour.hex = document.getElementById("MERGE0").value;
+                  props.submit(newColour);
+                }
               }}
             />
           </div>

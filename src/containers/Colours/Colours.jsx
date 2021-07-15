@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../../components/Nav";
 import ColourCard from "../../components/ColourCard";
 import MenuModal from "../../components/MenuModal";
@@ -8,7 +8,9 @@ const Colours = () => {
   return (
     <>
       <Nav />
-      <ColourCard />
+      <ColourCard hex="76a955" />
+      <ColourCard hex="76a955" />
+      <ColourCard hex="76a955" />
     </>
   );
 };
