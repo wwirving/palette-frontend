@@ -8,6 +8,7 @@ const Nav = () => {
       <div className={styles.sticky}>
         <div className={styles.container}>
           <Link to="/">{`<`}</Link>
+          <div className={styles.blankSpace}></div>
           <Link to="/new">{`+`}</Link>
         </div>
       </div>
