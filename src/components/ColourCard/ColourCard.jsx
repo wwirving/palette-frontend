@@ -20,7 +20,7 @@ const ColourCard = (props) => {
           </p>
         </div>
       </div>
-      <MenuModal modal={modal} click={toggleModal} update={props.update} />
+      <MenuModal modal={modal} click={toggleModal} />
     </>
   );
 };
